@@ -45,3 +45,12 @@ clean:
 dist: clean bundle
 	@cd $(BUILD_DIR) && zip -r "$(APP_NAME).zip" "$(APP_NAME).app"
 	@echo "Created distribution ZIP in $(BUILD_DIR)/$(APP_NAME).zip"
+
+dmg: clean bundle
+	@echo "Creating DMG..."
+	@mkdir -p $(BUILD_DIR)/dmg_root
+	@cp -R "$(APP_BUNDLE)" $(BUILD_DIR)/dmg_root/
+	@ln -s /Applications $(BUILD_DIR)/dmg_root/Applications
+	@hdiutil create -volname "$(APP_NAME)" -srcfolder $(BUILD_DIR)/dmg_root -ov -format UDZO $(BUILD_DIR)/"$(APP_NAME).dmg"
+	@rm -rf $(BUILD_DIR)/dmg_root
+	@echo "Created DMG in $(BUILD_DIR)/$(APP_NAME).dmg"

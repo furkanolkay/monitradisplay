@@ -16,11 +16,14 @@ Monitra Virtual is a lightweight macOS utility that allows you to create virtual
 
 ## Installation
 
-### From Source
+### Pre-built (Recommended)
+1. Download the latest **Monitra Virtual.dmg** from the [Releases](https://github.com/furkanolkay/monitradisplay/releases) page.
+2. Open the DMG and drag **Monitra Virtual** to your Applications folder.
 
+### From Source
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/monitradisplay.git
+   git clone https://github.com/furkanolkay/monitradisplay.git
    cd monitradisplay/VirtualScreen
    ```
 2. Build the application:
@@ -60,11 +63,14 @@ Monitra Virtual, sanal ekranlar oluşturmanıza ve bunları bir pencere içinde 
 
 ## Kurulum
 
-### Kaynak Koddan
+### Hazır Sürüm (Önerilen)
+1. [Releases](https://github.com/furkanolkay/monitradisplay/releases) sayfasından en son **Monitra Virtual.dmg** dosyasını indirin.
+2. DMG dosyasını açın ve **Monitra Virtual** simgesini Uygulamalar (Applications) klasörüne sürükleyin.
 
+### Kaynak Koddan
 1. Depoyu kopyalayın:
    ```bash
-   git clone https://github.com/yourusername/monitradisplay.git
+   git clone https://github.com/furkanolkay/monitradisplay.git
    cd monitradisplay/VirtualScreen
    ```
 2. Uygulamayı derleyin:
